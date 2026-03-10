@@ -15,7 +15,7 @@ const normalTags = tags.filter((t: string) => !t.toLowerCase().startsWith('loc:'
 const normalTagItems: string[] = normalTags.map((t: string) => `#${t}`);
 const base = import.meta.env.BASE_URL ?? '/';
 const withBase = createWithBase(base);
-const defaultAuthorName = (site.author ?? 'Whono').trim() || 'Whono';
+const defaultAuthorName = (site.author ?? 'lemon').trim() || 'lemon';
 const authorName = (bit.data.author?.name ?? defaultAuthorName).trim() || defaultAuthorName;
 const authorAvatarRaw = (bit.data.author?.avatar ?? site.authorAvatar ?? '').trim();
 const authorAvatar = authorAvatarRaw ? withBase(authorAvatarRaw) : '';
