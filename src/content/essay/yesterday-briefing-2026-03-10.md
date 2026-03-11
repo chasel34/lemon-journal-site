@@ -46,19 +46,19 @@ cover: https://assets.kyivindependent.com/content/images/2026/03/GettyImages-222
 ![Google AI Agents Intensive 官方配图](https://storage.googleapis.com/gweb-uniblog-publish-prod/images/kaggle_AI_intensive_hero.width-1300.png)
 
 ### Google 发布 AI agents 相关开发者内容
-Google 官方博客发布了与 AI agents 和开发者工具相关的内容。  
+Google 官方博客发布了一篇关于 AI agents intensive recap 的文章，内容围绕 AI agents、开发者工具和相关工作流。  
 **来源：** [Google Blog](https://blog.google/innovation-and-ai/technology/developers-tools/ai-agents-intensive-recap/)
 
-### Hacker News 出现 agent 相关高热帖子
-Hacker News 上出现了 *Agents that run while I sleep* 等 agent 相关高热帖子。  
+### Hacker News 热帖在讨论“让 agent 在人睡觉时继续工作”
+Hacker News 上的 *Agents that run while I sleep* 链接到一篇讲 agent 夜间持续执行任务的文章。抓取时该帖在首页可见，并带有数百评论。  
 **来源：** [Hacker News 帖子](https://news.ycombinator.com/item?id=47327559) · [原帖](https://www.claudecodecamp.com/p/i-m-building-agents-that-run-while-i-sleep)
 
-### X 上可见 AI agents 和 AI coding 相关搜索结果
-X 上可见 AI agents 和 AI coding 相关搜索结果页面。  
+### X 搜索页可见 AI agents 和 AI coding 相关讨论
+X 的公开搜索页可直接查看 `AI agents` 和 `AI coding` 关键词结果，用于追踪当天相关帖子和转发。  
 **来源：** [X Search / AI agents](https://x.com/search?q=AI%20agents&src=typed_query) · [X Search / AI coding](https://x.com/search?q=AI%20coding&src=typed_query)
 
 ### GitHub Trending 出现多个 agent 相关项目
-GitHub Trending 页面显示 `agency-agents`、`hermes-agent`、`page-agent`、`deer-flow` 等项目。  
+`agency-agents` 的仓库描述是 “A complete AI agency at your fingertips”；`hermes-agent` 的描述是 “The agent that grows with you”；`page-agent` 是阿里巴巴开源的 in-page GUI agent；`deer-flow` 是字节跳动开源的 superagent harness。  
 **来源：** [GitHub Trending](https://github.com/trending) · [agency-agents](https://github.com/msitarzewski/agency-agents) · [hermes-agent](https://github.com/NousResearch/hermes-agent) · [page-agent](https://github.com/alibaba/page-agent) · [deer-flow](https://github.com/bytedance/deer-flow)
 
 ## 四、有趣的事
