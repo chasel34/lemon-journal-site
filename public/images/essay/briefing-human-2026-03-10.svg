@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#f7f3ec"/>
+  <g fill="none" stroke="#b8ac99" stroke-width="2.5">
+    <rect x="120" y="120" width="1360" height="660" rx="28" fill="#fcfaf6"/>
+    <circle cx="480" cy="430" r="120"/>
+    <path d="M640 500 C760 360, 920 330, 1120 360"/>
+    <path d="M640 560 C790 470, 980 470, 1180 540"/>
+  </g>
+  <g fill="#564d42" font-family="'Noto Serif SC', serif">
+    <text x="120" y="90" font-size="58">有趣的事</text>
+    <text x="720" y="380" font-size="34">世界不只有棋盘，也还有具体的人。</text>
+    <text x="720" y="435" font-size="26" opacity="0.86">这栏不是拿来搞笑的，是给整份简报留一点空气。</text>
+    <text x="720" y="490" font-size="26" opacity="0.86">当大战略、大市场和大战争填满页面时，</text>
+    <text x="720" y="530" font-size="26" opacity="0.86">能把读者重新拉回具体人的命运，本身就是价值。</text>
+  </g>
+</svg>

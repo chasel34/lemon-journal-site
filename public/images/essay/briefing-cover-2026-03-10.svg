@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">昨日简报封面图卡</title>
+  <desc id="desc">概括世界、中国、AI 三条主线的封面图卡。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f6f0e6" />
+      <stop offset="100%" stop-color="#e7dfd1" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)" />
+  <g fill="#4f463c">
+    <text x="120" y="150" font-size="74" font-family="'Noto Serif SC', serif">昨日简报</text>
+    <text x="120" y="206" font-size="28" font-family="'Noto Serif SC', serif" opacity="0.82">2026-03-10 · 世界 / 中国 / AI / 有趣的事</text>
+  </g>
+  <g fill="none" stroke="#b7ab97" stroke-width="2.5">
+    <rect x="120" y="260" width="1360" height="520" rx="26" />
+    <rect x="160" y="310" width="400" height="180" rx="18" fill="#f8f4ed" />
+    <rect x="600" y="310" width="400" height="180" rx="18" fill="#f8f4ed" />
+    <rect x="1040" y="310" width="400" height="180" rx="18" fill="#f8f4ed" />
+    <rect x="160" y="530" width="1280" height="190" rx="18" fill="#fbf8f2" />
+  </g>
+  <g fill="#5a5045" font-family="'Noto Serif SC', serif">
+    <text x="190" y="366" font-size="34">世界</text>
+    <text x="190" y="412" font-size="22" opacity="0.85">中东风险继续外溢</text>
+    <text x="190" y="446" font-size="22" opacity="0.85">能源、航运与外交重新捆绑</text>
+
+    <text x="630" y="366" font-size="34">中国</text>
+    <text x="630" y="412" font-size="22" opacity="0.85">外贸与价格信号改善</text>
+    <text x="630" y="446" font-size="22" opacity="0.85">但外部扰动仍在拉扯</text>
+
+    <text x="1070" y="366" font-size="34">AI</text>
+    <text x="1070" y="412" font-size="22" opacity="0.85">热闹仍多</text>
+    <text x="1070" y="446" font-size="22" opacity="0.85">真正值得看的是落地能力</text>
+
+    <text x="190" y="588" font-size="30">这份简报想做的，不是把标题再抄一遍。</text>
+    <text x="190" y="635" font-size="24" opacity="0.88">它想做的是：把过去 24 小时里真正值得记住的脉络整理出来，</text>
+    <text x="190" y="672" font-size="24" opacity="0.88">让人读完脑子里留下结构，而不是只剩下一串链接和几张吓人的图。</text>
+  </g>
+</svg>

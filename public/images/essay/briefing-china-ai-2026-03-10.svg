@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#f8f5ef"/>
+  <g fill="none" stroke="#b8ad9b" stroke-width="2.5">
+    <rect x="120" y="120" width="620" height="660" rx="24" fill="#fbf8f2"/>
+    <rect x="860" y="120" width="620" height="660" rx="24" fill="#fbf8f2"/>
+  </g>
+  <g fill="#554b40" font-family="'Noto Serif SC', serif">
+    <text x="170" y="200" font-size="54">中国</text>
+    <text x="170" y="255" font-size="24" opacity="0.85">外贸与价格信号开始没那么难看</text>
+    <text x="170" y="340" font-size="26">• 前两个月外贸开局偏强</text>
+    <text x="170" y="386" font-size="26">• CPI 回升，PPI 跌幅收窄</text>
+    <text x="170" y="432" font-size="26">• 内部修复与外部扰动仍在拉扯</text>
+
+    <text x="910" y="200" font-size="54">AI</text>
+    <text x="910" y="255" font-size="24" opacity="0.85">重点从“发布”滑向“落地”</text>
+    <text x="910" y="340" font-size="26">• 智能体产品继续升温</text>
+    <text x="910" y="386" font-size="26">• 竞争点转向部署门槛</text>
+    <text x="910" y="432" font-size="26">• 真正值钱的是稳定完成任务</text>
+  </g>
+</svg>
