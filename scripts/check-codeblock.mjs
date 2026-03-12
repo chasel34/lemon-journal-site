@@ -1,8 +1,8 @@
-import { readFile } from 'node:fs/promises';
+import { readFile, readdir } from 'node:fs/promises';
 import path from 'node:path';
 
 const distDir = path.resolve('dist');
-const target = path.join(distDir, 'archive', 'markdown-guide', 'index.html');
+const contentRoots = ['archive', 'essay'];
 
 const hasClass = (html, className) => {
   const pattern = new RegExp(`class="[^"]*\\b${className}\\b`, 'i');
@@ -43,22 +43,54 @@ const checks = [
   }
 ];
 
-try {
-  const html = await readFile(target, 'utf8');
-  const failed = checks.filter((item) => !item.test(html));
+async function getHtmlTargets() {
+  const targets = [];
 
-  if (failed.length > 0) {
-    console.error('Code block check failed:');
-    for (const item of failed) {
-      console.error(`- missing ${item.id}`);
+  for (const root of contentRoots) {
+    const rootDir = path.join(distDir, root);
+    let entries = [];
+    try {
+      entries = await readdir(rootDir, { withFileTypes: true });
+    } catch {
+      continue;
     }
+
+    for (const entry of entries) {
+      if (!entry.isDirectory() || entry.name === 'page') continue;
+      targets.push(path.join(rootDir, entry.name, 'index.html'));
+    }
+  }
+
+  return targets;
+}
+
+try {
+  const targets = await getHtmlTargets();
+  let checkedFiles = 0;
+
+  for (const target of targets) {
+    try {
+      const html = await readFile(target, 'utf8');
+      checkedFiles += 1;
+      const failed = checks.filter((item) => !item.test(html));
+      if (failed.length === 0) {
+        console.log(`Code block check passed: ${path.relative(distDir, target)}`);
+        process.exit(0);
+      }
+    } catch {
+      // ignore missing files discovered during traversal
+    }
+  }
+
+  if (checkedFiles === 0) {
+    console.error('Code block check failed: unable to find built article pages under dist/archive or dist/essay.');
+    console.error('Run `npm run build` first.');
     process.exit(1);
   }
 
-  console.log('Code block check passed.');
+  console.error('Code block check failed: no built article page contained the expected code block markup.');
+  process.exit(1);
 } catch (err) {
-  console.error('Code block check failed: unable to read build output.');
-  console.error(`Expected file: ${target}`);
-  console.error('Run `npm run build` first.');
+  console.error('Code block check failed:', err instanceof Error ? err.message : err);
   process.exit(1);
 }

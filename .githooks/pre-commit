@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+printf '\n[pre-commit] Running project verification...\n\n'
+npm run precommit
