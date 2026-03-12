@@ -11,7 +11,7 @@ const bits = await getPublished('bits', {
   orderBy: (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
 });
 
-const FULL_RENDER_LIMIT = 180;
+const FULL_RENDER_LIMIT = 400;
 
 const cards = await Promise.all(
   bits.map(async (bit) => {
